@@ -1,9 +1,9 @@
 
 <div align="center">
 
-# 🧠 MetaReflexAI
+# 🧠 Metacognitive System for AI Models
 
-**A Framework for Metacognitive Capabilities in Language Models**
+**Accelerated, Self-Optimizing Training for Language Models**
 
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-1.9+-ee4c2c.svg)](https://pytorch.org/)
@@ -13,90 +13,101 @@
 
 ## 🔍 Overview
 
-**MetaReflexAI** is an experimental AI framework designed to equip language models with **advanced metacognitive capabilities** — enabling them to **observe**, **analyze**, and **adjust** their internal processes during training.
+This project aims to build a **metacognitive system that allows AI models to observe, analyze, and adjust their own learning processes**. Through a cycle of introspection and modification, models can evolve autonomously during training.
 
-The aim is to move beyond traditional machine learning by embedding a self-reflective cycle directly into the model architecture:
+Initial tests have yielded **functional models**, even though they're not yet optimal. Notably, the entire process runs on **low-cost hardware (GTX 1650 + 16 GB RAM)** with **surprisingly fast training times**.
 
-* **Self-Observation:** Real-time analysis of its own behavior, activations, and gradients
-* **Reflection:** Generation of insights about internal learning dynamics
-* **Autonomous Adjustment:** Modification of its own parameters and training strategies
+## 🧠 Purpose: Real Acceleration & Self-Improvement
 
-> ⚠️ **Note:** MetaReflexAI is currently under active development and does not yet include a functional model or completed training pipeline. This repository is for documentation, prototyping, and tracking progress toward the full implementation.
+The goal is not just faster training, but to enable **models that understand and improve themselves**. This includes:
 
-## 🎯 Project Goals
+* Introspective reasoning
+* Parameter self-adjustment
+* Real-time performance analysis during training
 
-* Design a reusable **metacognitive framework** for PyTorch-based models
-* Implement a configurable **observation–reflection–adjustment** cycle
-* Develop tools to support **introspection**, **adaptive training**, and **self-correction**
-* Document architecture and principles for future contributors
-
-## 🏗️ Proposed Architecture
+## 🛠️ General Architecture
 
 ```mermaid
 flowchart TD
-    A[Dataset] --> B[Core Model]
-    B --> C[Self-Observation Module]
-    C --> D[Metacognitive Reflection]
-    D --> E[Self-Modification Engine]
-    E --> F[Training Controller]
-    F --> B
-    E --> G[Insight Logs]
+    A[Training Material] --> B[Autonomous Brain]
+    B --> C[Concept Extraction]
+    C --> D[Metacognitive Cycle]
+    D --> E[Self-Observation]
+    E --> F[Reflection]
+    F --> G[Self-Modification]
+    G --> D
+    D --> H[Optimized Model]
 ```
 
-## 📁 Planned Repository Structure
+## ⚙️ Code Structure
 
-| Folder        | Description                                        |
-| ------------- | -------------------------------------------------- |
-| `core/`       | Core modules: observation, reflection, adjustment  |
-| `training/`   | Scripts and experiments related to training loops  |
-| `prototypes/` | Isolated experimental code (early ideas, testbeds) |
-| `docs/`       | Technical documentation and design notes           |
-| `examples/`   | Minimal examples of components in action           |
+| File / Module                 | Function                                     |
+| ----------------------------- | -------------------------------------------- |
+| `autonomous_brain.py`         | Automatically extracts concepts              |
+| `self_observation.py`         | Observes weights, gradients, and activations |
+| `metacognitive_reflection.py` | Reflects on the model's state                |
+| `self_modification.py`        | Adjusts the model autonomously               |
+| `metacognitive_training.py`   | Trains models with introspection             |
+| `train.py`                    | General training script                      |
 
-## 🔧 Technical Vision
+## 📈 Early Results
 
-MetaReflexAI aims to shift the learning paradigm by letting the model act as both **subject** and **scientist** of its own training. The metacognitive cycle may include:
+* ✔️ Functional models already working
+* 🖥️ Trained on low-cost hardware (GTX 1650, 16 GB RAM)
+* ⚡ Training completed in record times
+* 🔧 Models are not yet optimal, but improve as they train
 
-* Tracking loss and weight evolution internally
-* Modifying learning rate or optimizer state dynamically
-* Generating self-feedback or commentary on its own performance
+## 🔄 Metacognitive Cycle
 
-## 🚧 Current Status
+| Stage            | Purpose                                      |
+| ---------------- | -------------------------------------------- |
+| **Observation**  | Analyze internal model state                 |
+| **Reflection**   | Generate hypotheses and learning insights    |
+| **Modification** | Change parameters, architecture, or behavior |
+| **Repetition**   | Cycle repeats throughout training            |
 
-* ✅ Core design concept
-* 🟡 Initial prototyping of modules (`self_observation`, `metacognitive_reflection`)
-* 🔜 Baseline language model integration
-* 🔜 Simple console-based introspection logs
-* 🔜 Experiment tracking tools
+## 📦 Installation
 
-## 💡 Why This Matters
-
-Traditional models are passive during training. MetaReflexAI explores a future where models **actively reason about their own learning**, potentially leading to:
-
-* More efficient use of data and resources
-* Better generalization and fewer training pathologies
-* Foundations for **truly adaptive and autonomous agents**
-
-## 📦 Installation (Coming Soon)
-
-This repository currently contains **documentation and development materials** only. Installation and training instructions will be added in upcoming milestones.
-
-## 📜 License
-
-```
-Apache License 2.0 © 2025 MetaReflexAI Contributors
+```bash
+git clone (soon)
+cd metacognitive-system
+pip install -r requirements.txt
 ```
 
----
+## 🚀 Training Example
+
+```bash
+python Scripts/training/train_with_metacognitive.py \
+    --base_model new \
+    --work_dir ./training_data \
+    --external_dataset ./data/texts \
+    --intelligence_level 10 \
+    --cycles 25 \
+    --steps 1000 \
+    --use_autonomous_brain \
+    --batch_size 4 \
+    --learning_rate 5e-5 \
+    --fp16
+```
+
+## 💡 Next Steps
+
+* Refine reflection and self-adjustment mechanisms
+* Improve model awareness of overfitting
+* Integrate deeper attention and activation analysis
+
+## 📄 License
+
+```
+Apache 2.0 License
+```
 
 <div align="center">
 
-## 🌐 Get Involved
+## 🧠 Contact
 
-We're looking for collaborators interested in metacognition, AI architecture, introspective learning, and reflective systems. If you’d like to contribute or follow development:
-
-* 🌍 [GitHub Discussions](https://github.com/youruser/metareflexAI/discussions) *(coming soon)*
-* 🧠 \[Submit an idea or experiment as a PR]
-* 📬 Contact: \[[your-email@example.com](mailto:your-email@example.com)]
+**Developed by:** NeuroForge Labs
+📧 Email: [neuroforgelabs@proton.me](mailto:neuroforgelabs@proton.me)
+🤝 Discord: [Join us](https://discord.gg/7JUAdayE)
 
 </div>
