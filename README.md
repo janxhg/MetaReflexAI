@@ -39,17 +39,6 @@ flowchart TD
     D --> H[Optimized Model]
 ```
 
-## ⚙️ Code Structure
-
-| File / Module                 | Function                                     |
-| ----------------------------- | -------------------------------------------- |
-| `autonomous_brain.py`         | Automatically extracts concepts              |
-| `self_observation.py`         | Observes weights, gradients, and activations |
-| `metacognitive_reflection.py` | Reflects on the model's state                |
-| `self_modification.py`        | Adjusts the model autonomously               |
-| `metacognitive_training.py`   | Trains models with introspection             |
-| `train.py`                    | General training script                      |
-
 ## 📈 Early Results
 
 * ✔️ Functional models already working
@@ -74,21 +63,6 @@ cd metacognitive-system
 pip install -r requirements.txt
 ```
 
-## 🚀 Training Example
-
-```bash
-python Scripts/training/train_with_metacognitive.py \
-    --base_model new \
-    --work_dir ./training_data \
-    --external_dataset ./data/texts \
-    --intelligence_level 10 \
-    --cycles 25 \
-    --steps 1000 \
-    --use_autonomous_brain \
-    --batch_size 4 \
-    --learning_rate 5e-5 \
-    --fp16
-```
 
 ## 💡 Next Steps
 
